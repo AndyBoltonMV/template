@@ -13,10 +13,13 @@ import Create from './CreateForm';
 export const App = () => {
 	return (
 		<>
-		<main>
-			<Navbar />
-			<Home />
-		</main>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element ={<Home />} />
+          <Route path="/createitem" element ={<Create />} />
+        </Routes>
+      </div>
 		</>
 	)
 }
