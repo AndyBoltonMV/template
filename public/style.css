@@ -1,5 +1,132 @@
 * {
-  margin: 0;
   box-sizing: border-box;
-  background-color: rgb(223, 223, 223);
 }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  /* height: 80px; */
+}
+
+
+
+.site-title {
+  font-size: 2rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+}
+
+.nav li.active {
+  color: rgb(255, 174, 0);
+}
+
+.nav li:hover {
+  color: #888;
+}
+
+.wrapper {
+  margin: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 0 10px 5px #999;
+  border-radius: 0.2rem;
+  min-width: 28rem;
+  display: flex;
+
+  
+}
+
+.card_img{
+  max-width: 12rem;
+  min-width: 12rem;
+  height: 100%;
+  object-fit:cover;
+  padding: 20px;
+  align-self: center;
+}
+
+.card_body{
+  margin: 1rem;
+  flex-grow: 1;
+}
+
+.card_title{
+  line-height: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card_description {
+  line-height: 1.2rem;
+}
+
+.card_price{
+  font-size: 1.4rem;
+  margin-top:0.6rem
+}
+
+.card_price::before{
+  content:"£";
+  font-size: 1rem;
+  position: relative;
+  top:-0.3rem;
+  padding-right: 0.1rem;
+}
+
+.card_button{
+  border: none;
+  border-top: 1px solid grey;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  /* min-width: 200px; */
+  width: 100%;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  
+}
+
+.card_button:hover{
+  color: rgb(255, 174, 0);
+}
+
